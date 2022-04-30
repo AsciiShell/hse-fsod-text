@@ -1,0 +1,93 @@
+%!TEX TS-program = xelatex
+\documentclass[a4paper,14pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\input{data/preambular.tex}
+\usepackage[fixlanguage]{babelbib}
+\usepackage{lastpage}
+\begin{document}
+
+	\input{data/title.tex}
+
+    \section*{\normalsize \hfill Аннотация \hfill}
+
+    ...
+
+    \sloppy
+    \newpage
+
+    \section*{\normalsize \hfill Abstract \hfill}
+
+    ...
+
+    \newpage
+
+    \tableofcontents
+    \pagebreak
+
+    \section*{Введение}
+    \addcontentsline{toc}{section}{\protect\numberline{}Введение}
+
+
+    \newpage
+
+
+    \section{Обзор литературы}
+
+    CLIP~\cite{CLIP}
+
+    \subsection{Цель исследования}
+
+    Задачи:
+    \begin{enumerate}
+        [1)]
+        \itemsep0em
+        \item йцу
+
+    \end{enumerate}
+
+    \subsection{Выводы к главе \thesection}
+    \begin{enumerate}
+        [1)]
+        \itemsep0em
+        \item йцу
+    \end{enumerate}
+
+    \newpage
+
+
+    \section{Теоретическая часть}
+
+    \subsection{Выводы к главе \thesection}
+    \begin{enumerate}
+        [1)]
+        \itemsep0em
+        \item йцу
+    \end{enumerate}
+
+    \newpage
+
+
+    \section{Практическая часть}
+
+    \subsection{Выводы к главе \thesection}
+
+
+
+    \newpage
+
+
+    \section{Заключение}
+
+    В работе изучена...
+
+    \newpage
+    \renewcommand{\refname}{{\normalsize \hfill Список использованных источников \hfill}}
+%    \bibliographystyle{unsrt}
+    \selectbiblanguage{russian}
+    \bibliographystyle{BibTeX-Styles/ugost2008mod}
+    \bibliography{main}
+    \newpage
+
+\end{document}
