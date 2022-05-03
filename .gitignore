@@ -51,7 +51,7 @@ pip-selfcheck.json
 *.dvi
 *.xdv
 *-converted-to.*
-.pdf
+*.pdf
 *.bbl
 *.bcf
 *.blg
@@ -253,3 +253,4 @@ dmypy.json
 .pyre/
 .pytype/
 cython_debug/
+.idea/
